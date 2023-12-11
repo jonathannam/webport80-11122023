@@ -1,0 +1,158 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+}
+.header {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Set a high z-index to ensure it's above other elements */
+}
+
+.header__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    max-width: 2rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem; 
+}
+
+.menu__item {
+    margin: 0 1rem;
+    /* position: relative; */
+}
+
+.menu__item:hover .menu__child{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu__child{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s linear;
+}
+
+.menu__child-item{
+    width: 25%;
+
+}
+
+.menu__child-item h4 {
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+    background-color: #00aefd;
+}
+
+.menu__child-list li {
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.menu__link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+    padding: 2rem;
+}
+
+ul, ol {
+    list-style-type: none; 
+    padding: 0;
+}
+
+a {
+    text-decoration: none; 
+    color: black; 
+    text-decoration: none; 
+}
+  
+a:hover {
+    color: blue; 
+}
+
+
+.left-border {
+    border-bottom: 2px solid black; /* Sử dụng border-bottom thay vì border-left */
+    padding-left: 10px;
+    margin-left: 3cm;
+    font-size: 16px;
+    display: 1px; 
+    margin-right: 3cm;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

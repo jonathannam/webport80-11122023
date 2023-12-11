@@ -1,0 +1,196 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Register User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="/images/demo.jpeg" alt="Sample Image">
+    </center>
+    <center>
+        <h1 class="form-title">Register User</h1>
+    </center>
+    
+    <form action="/register" method="post" class="register-form">
+        <b>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="input-field" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="input-field" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" class="input-field" required>
+            
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" class="radio-input" required>
+                <label for="male" class="radio-label">Male</label>
+                <input type="radio" id="female" name="gender" value="female" class="radio-input">
+                <label for="female" class="radio-label">Female</label>
+            </div>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" class="input-field" required>
+        </b>
+        
+        <center>
+            <input type="submit" value="Register" class="submit-button">
+        </center>
+    </form>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Home</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="header__inner">
+            <div class="logo"><img src="/images/demo.jpeg" alt=""></div>
+            <ul class="menu">
+                <li class="menu__item"><a href="/" class="menu__link" style="font-size: 16px" >DASHBOARD</a></li>
+                <li class="menu__item">
+                    <a href="" class="menu__link" style="font-size: 16px" >REPORT</a>
+                    <div class="menu__child">
+                        <div class="menu__child-item">
+                            <h4>Elements</h4>
+                            <ul class="menu__child-list">
+                                <li><a href="/TX_report">TX REPORT</a></li>
+                                <li><a href="/CA_report">CA REPORT</a></li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                            </ul>
+                        </div>
+                        <div class="menu__child-item">
+                            <h4>Elements</h4>
+                            <ul class="menu__child-list">
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                            </ul>
+                        </div>
+                        <div class="menu__child-item">
+                            <h4>Elements</h4>
+                            <ul class="menu__child-list">
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                            </ul>
+                        </div>
+                        <div class="menu__child-item">
+                            <h4>Elements</h4>
+                            <ul class="menu__child-list">
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                                <li>Demo item</li>
+                            </ul>
+                        </div>
+                    </div>  
+                </li>
+                
+                <li class="menu__item"><a href="/register" class="menu__link" style="font-size: 16px" >REGISTER</a></li>
+                <li class="menu__item"><a href="/search" class="menu__link" style="font-size: 16px" >SEARCH</a></li>
+                <li class="menu__item"><a href="/Partners" class="menu__link" style="font-size: 16px" >PARTNER</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <form action="/register" method="post" class="register-form">
+        
+            <b>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="input-field" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="input-field" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" class="input-field" required>
+                
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" class="radio-input" required>
+                    <label for="male" class="radio-label">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" class="radio-input">
+                    <label for="female" class="radio-label">Female</label>
+                </div>
+                
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" class="input-field" required>
+            </b>
+            
+            <center>
+                <input type="submit" value="Register" class="submit-button">
+            </center>
+        </form>
+    </div>
+    
+
+</body>
+</html>
